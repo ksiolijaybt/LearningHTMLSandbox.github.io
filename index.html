@@ -6,68 +6,80 @@
     <title>Learning HTML</title>
     <meta name="author" content="Mark Mercer">
     <meta name="description" content="Learning HTML"> <!--Webpage Description -->
-    <meta name="keywords" content="Learning, Tag, HTML, Layout">
+    <meta name="description" content="HTML Flexbox"> <!-- Webpage Description -->
+    <meta name="keywords" content="HTML, meta data, Flexbox"> <!-- Key Words for conducting searches in Search Engines -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style> div {border: thin dotted red;} </style>
+<style>
+  * {
+    box-sizing: border-box;
+  }
 
-  </head>
+  .header {
+    border: 1px solid red;
+    padding: 15px;
+  }
 
-  <body>
+  .menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
 
-    <div><header><h1 style="font-size:5.5vw;">Header Title</h1></header></div>(splash page)
+  .main {
+    width: 50%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
 
-    <div><h3><nav>Navigation with no viewport in h3</nav></h3></div>
+  .aside {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
 
-    <div>
-      <aside>
-        <p>This is the aside space with no viewport in a p-tag..</p>
-      </aside>
-    </div>
+  .footer {
+    border: 1px solid red;
+    padding: 15px;
+  }
 
-    <div>
-      <section>
-        <h3 style="font-size:2.5vw;">Making Comparisons of Tags</h3>
-        <article>
-          <p>Here are the hyperlinks to the mandatory Experiment Pages: </p>
-          <ol style="font-size:1vw;" type="A">
-            <li style="font-size:2vw;"> Meta Data Example: <a href="childPages/Meta Data.html" target="_blank">Click Here</a>
-            <li style="font-size:3vw;"> Footer Blockquote Example: <a href="childPages/Footer Blockquote.html" target="_blank">Click Here</a>
-            <li style="font-size:1.25vw;"> Template Exemplar: <a href="childPages/childTemplate.html" target="_blank">Click Here</a>
-            <li style="font-size:1vw;"> Headings adn Paragraph Tags: <a href="childPages/Headings and Paragraph.html" target="_blank">Click Here</a>
-            <li > Subscript and Superscript Tags <a href="childPages/Subscript and Superscript.html" target="_blank">Click Here</a>
-            <li > Image Lesson <a href="childPages/Image Lesson.html" target="_blank">Click Here</a>
-            <li style="font-size:1vw;"> Laying out DIVs (Using HTML BoilerPalte) <a href="childPages/Laying out DIVs.html" target="_blank">Click Here</a>
-            <li style="font-size:1vw;"> What this index page might look like with Flexbox <a href="childPages/Flexbox.html" target="_blank">Click Here</a>
-          </ol>
-          <p style="font-size:1vw;">Additional information pages</p>
-          <ul style="font-size:2.5vw;" style="list-style-type:square;">
-            <li style="font-size:2vw;"> Lists: unordered and ordered information, <a href="" target="_blank">Click Here</a>
-            <li style="font-size:1vw;"> Example #1, <a href="" target="_blank">Click Here</a>
-            <li style="font-size:2vw;"> Example #2, <a href="" target="_blank">Click Here</a>
-            <li > Hyperlinks and Images Example, <a href="" target="_blank">Click Here</a>
-            <li style="font-size:2vw;"> Iamges: and advanced lesson on mapping, <a href="" target="_blank">Click Here</a>
-            <li > Example 2-Column Layout using flexbox, <a href="" target="_blank">Click Here</a>
-            <li style="font-size:3vw;"> Example 3-column Layout for Sematic Body Tags using flexbox <a href="" target="_blank">Click Here</a>
-          </ul>
-        </article>
-      </section>
-    </div>
+</style>
+</head>
 
-  </body>
+<body>
 
-  <footer>
-    <!-- Date Accessed: 20210916-->
-    <blockquote cite="https://www.brainyquote.com/quotes/mitchell_kapor_163583">
-      <p><em>Getting information off the Internet is like taking a drink from a firehose.</em></p>
-      <p>
-        <strong>
-          <a href="https://www.brainyquote.com/quotes/mitchell_kapor_163583" target="_blank">
-            Mitch Kapor
-          </a>
-        </strong>
-      </p>
-    <p>&copy Mark Mercer, powered by MercersKitchen in GitHub</p>
-  </footer>
+<div class="header"><header><h1>Chania</h1></header></div>
+
+<div class="menu">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="main">
+  <h1>The City</h1>
+  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+<div class="aside">
+  <h1>The Aside Space</h1>
+  <p>Giberish.</p>
+  <br><br>
+</div>
+
+<div class="footer">
+  <br><br>
+  <h1>The Quote</h1>
+  <p>Special Symbol and other things</p>
+</div>
+
+</body>
 
 </html>
